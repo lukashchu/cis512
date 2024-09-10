@@ -1,0 +1,281 @@
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+}
+
+.App {
+  text-align: center;
+}
+
+.Vertical-app {
+  position: relative;
+  width: 56.25vh;
+  height: 100vh;
+  max-width: 1080px;
+  max-height: 1960px;
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  outline: 5px solid #000000;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.sun-icon {
+  position: absolute;
+  top: 0;     
+  left: 0;              
+  width: 50%;           
+  height: 28%;          
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.sun {
+  font-size: 10vw;      
+  color: #FFD700;     
+}
+
+.weather-info {
+  position: absolute;
+  top: 0%;        
+  right: 0;        
+  width: 50%;     
+  height: 28%;     
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.temperature {
+  font-size: 3em;
+  color: #000000; 
+  margin-bottom: 10px;
+}
+
+.rain-info {
+  display: flex;
+  align-items: center;
+}
+
+.rain-info .wi-rain {
+  font-size: 2em;
+  color: #00f; 
+  margin-right: 10px;
+}
+
+.rain-chance {
+  font-size: 2em;
+  color: #000000;  
+}
+
+.stats-panel {
+  position: absolute;
+  top: 30%;       
+  left: 0;       
+  width: 100%;  
+  height: auto;
+  display: flex;
+  justify-content: space-around; 
+  align-items: center;
+  padding: 0px;
+  border-top: 1px solid #ffffff; 
+  background-color: #ffffff; 
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stat-item i {
+  font-size: 2em;    
+  color: #000000;     
+  margin-bottom: 5px;
+}
+
+.stat-value {
+  font-size: 1.5em; 
+  color: #000000; 
+}
+
+.middle-panel {
+  position: absolute;
+  top: 50%;  
+  left: 50%;  
+  transform: translate(-50%, -50%);
+  width: 80%;   
+  height: auto;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: #49cbff;
+  border-radius: 15px; 
+  border: 1px solid #000000;
+}
+
+.date-info {
+  font-size: 1.5em;
+  color: #000000;
+}
+
+.zodiac-moon-panel {
+  position: absolute;
+  bottom: 35%; 
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%; 
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  padding: 10px;
+}
+
+.zodiac-info,
+.moon-info {
+  display: flex;
+  align-items: center;
+}
+
+.zodiac-icon {
+  width: 2em; 
+  height: auto; 
+  margin-right: 10px; 
+}
+
+.moon-info i {
+  font-size: 2em; 
+  color: #000000; 
+  margin-right: 10px; 
+}
+
+.zodiac-label,
+.moon-phase {
+  font-size: 1.5em;
+  color: #000000; 
+}
+
+.bottom-panel {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 30%;
+  background-color: rgb(167, 245, 255);
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  border-top: 2px dotted #555555;
+}
+
+.selection-container {
+  display: flex;
+  justify-content: space-evenly; 
+  width: 100%;
+}
+
+.selection-bar {
+  width: 16%;
+  height: 15px;
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+.selection-bar.highlighted {
+  background-color: #000000; 
+}
+
+.info-container {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.date {
+  font-size: 1.5em;
+  color: #000;
+  margin-bottom: 10px; 
+}
+
+.sunny-icon {
+  font-size: 2em;
+  color: #FFD700; 
+  margin-bottom: 10px;
+}
+
+.cloudy-icon {
+  font-size: 2em;
+  color: #838383; 
+  margin-bottom: 10px;
+}
+
+.rainy-icon {
+  font-size: 2em;
+  color: #00f;
+  margin-bottom: 10px;
+}
+
+.date-temp {
+  font-size: 1.5em;
+  color: #000000; 
+}
+
+.selection-bar:hover {
+  background-color: #cccccc;
+}
