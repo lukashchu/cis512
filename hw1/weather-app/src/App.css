@@ -83,6 +83,16 @@ html, body, #root {
   color: #FFD700;     
 }
 
+.cloudy {
+  font-size: 10vw;      
+  color: #838383;     
+}
+
+.rainy {
+  font-size: 10vw;      
+  color: #00f;     
+}
+
 .weather-info {
   position: absolute;
   top: 0%;        
