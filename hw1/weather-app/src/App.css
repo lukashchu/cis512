@@ -79,17 +79,17 @@ html, body, #root {
 }
 
 .sun {
-  font-size: 10vw;      
+  font-size: 9em;    
   color: #FFD700;     
 }
 
 .cloudy {
-  font-size: 10vw;      
+  font-size: 9em;      
   color: #838383;     
 }
 
 .rainy {
-  font-size: 10vw;      
+  font-size: 9em;      
   color: #00f;     
 }
 
